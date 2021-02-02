@@ -1,6 +1,8 @@
 # Calculator server
 
-TCP server providing a service for performing simple arithmetic calculations
+TCP server providing a service for performing simple arithmetic calculations.
+The client code can be found at https://github.com/ArtemDruzhilov/CalculatorClient.
+Also, you can use the standard telnet application as a client.
 
 Build
 ```bash
