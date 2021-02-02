@@ -1,7 +1,7 @@
 package com.test.calc.endpoint;
 
 import com.test.calc.service.CalculationService;
-import com.test.calc.service.CalculationServiceException;
+import com.test.calc.exception.CalculationServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

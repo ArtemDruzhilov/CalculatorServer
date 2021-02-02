@@ -1,5 +1,6 @@
 package com.test.calc.service;
 
+import com.test.calc.exception.CalculationServiceException;
 import org.mariuszgromada.math.mxparser.Expression;
 import org.springframework.stereotype.Service;
 
