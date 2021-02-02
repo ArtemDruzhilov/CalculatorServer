@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.annotation.MessageEndpoint;
 import org.springframework.integration.annotation.ServiceActivator;
 
+/**
+ * Processing incoming messages
+ */
 @MessageEndpoint
 public class TcpServerEndpoint {
 
@@ -20,6 +23,11 @@ public class TcpServerEndpoint {
         this.calculationService = calculationService;
     }
 
+    /**
+     * Processes messages coming to the inbound channel and generates reply
+     * @param inputText received text
+     * @return reply text
+     */
     @ServiceActivator(inputChannel = "inboundChannel")
     public String process(final String inputText) {
         String outputText;
